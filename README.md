@@ -1,27 +1,26 @@
-# Bilingproject
+# Food Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+## Description
+This project is a **Food Website** developed with **Angular**. It allows users to explore a variety of food options, view menus, and place orders. The website fetches data from a mock backend using **JSON Server**.
 
-## Development server
+## Features
+- **Homepage:** Displays a welcoming interface with featured dishes.
+- **Menu Page:** A list of food items, allowing users to explore different categories like starters, main course, and desserts.
+- **Order Page:** Users can place orders by selecting food items and submitting them via a form.
+- **Login Page:** Users can log in with their credentials to view personalized orders or save preferences.
+- **Display Info Page:** Displays user profile information like name, email, and address.
+- **Mock Backend:** Uses **JSON Server** to simulate a backend for handling menu items and user data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
+- **Angular**: The primary framework used to build the user interface.
+- **JSON Server**: Used for mocking the backend API.
+- **CSS**: For styling the components and the overall page layout.
 
-## Code scaffolding
+## Installation Steps
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow these steps to get started with the project:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 1. Clone the repository  
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/Yshirsatth466/food-website.git
