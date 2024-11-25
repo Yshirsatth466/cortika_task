@@ -1,0 +1,48 @@
+<div class="body">
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-gradient">
+    <div class="card shadow-lg p-4 rounded" style="width: 400px;">
+      <h1 class="text-center mb-4 text-primary">Login Page</h1>
+      <p class="text-center text-muted">Welcome! Please fill in your details below.</p>
+      
+      <form [formGroup]="loginforms" (ngSubmit)="saveuser()">
+        <div class="form-group mb-3">
+          <label for="id" class="form-label text-muted">User ID</label>
+          <input type="text" id="id" class="form-control" placeholder="Enter ID" formControlName="id">
+          <div *ngIf="loginforms.get('id')?.invalid && loginforms.get('id')?.touched" class="text-danger">
+            <small *ngIf="loginforms.get('id')?.hasError('required')">User ID is required</small>
+          </div>
+        </div>
+        
+        <div class="form-group mb-3">
+          <label for="name" class="form-label text-muted">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter Name" formControlName="name">
+          <div *ngIf="loginforms.get('name')?.invalid && loginforms.get('name')?.touched" class="text-danger">
+            <small *ngIf="loginforms.get('name')?.hasError('required')">Name is required</small>
+            <small *ngIf="loginforms.get('name')?.hasError('minlength')">Name must be at least 3 characters</small>
+          </div>
+        </div>
+  
+        <div class="form-group mb-3">
+          <label for="email" class="form-label text-muted">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter Email" formControlName="email">
+          <div *ngIf="loginforms.get('email')?.invalid && loginforms.get('email')?.touched" class="text-danger">
+            <small *ngIf="loginforms.get('email')?.hasError('required')">Email is required</small>
+            <small *ngIf="loginforms.get('email')?.hasError('email')">Enter a valid email</small>
+          </div>
+        </div>
+  
+        <div class="form-group mb-4">
+          <label for="address" class="form-label text-muted">Address</label>
+          <input type="text" id="address" class="form-control" placeholder="Enter Address" formControlName="address">
+          <div *ngIf="loginforms.get('address')?.invalid && loginforms.get('address')?.touched" class="text-danger">
+            <small *ngIf="loginforms.get('address')?.hasError('required')">Address is required</small>
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary w-100" [disabled]="loginforms.invalid">
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "yash",
+      "email": "yss@gmail.com",
+      "address": "nashik"
+    },
+    {
+      "id": "1",
+      "name": "yash shirsath",
+      "email": "yshirsath466@gmail.com",
+      "address": "nashik"
+    },
+    {
+      "id": "1",
+      "name": "niliesh",
+      "email": "yash466@gmail.com",
+      "address": "nashikk"
+    }
+  ],
+  "menu": [
+    {
+      "pasta": "2",
+      "nodels": "2",
+      "pizza": "10",
+      "id": "fe90"
+    },
+    {
+      "id": "aff4",
+      "pasta": 2,
+      "nodels": 2,
+      "pizza": 2
+    },
+    {
+      "id": "0d01",
+      "pasta": 1,
+      "nodels": 2,
+      "pizza": 1
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<div class="con">
+    <div class="container my-5">
+      <!-- Menu Header -->
+      <div class="text-center mb-4">
+        <h1 class="fw-bold text-primary">Menu</h1>
+        <p class="text-muted">Select your favorite items and enter the quantities.</p>
+      </div>
+  
+      <!-- Menu Form -->
+      <div class="card shadow p-4">
+        <h2 class="text-center text-primary mb-4">Place Your Order</h2>
+        <form [formGroup]="menuforms" (ngSubmit)="savemenu()">
+          <div class="form-group mb-3">
+            <label for="id" class="form-label">Order ID</label>
+            <input
+              type="text"
+              id="id"
+              class="form-control"
+              placeholder="Enter ID"
+              formControlName="id"
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="pasta" class="form-label">Pasta</label>
+            <input
+              type="number"
+              id="pasta"
+              class="form-control"
+              placeholder="Enter Quantity (Max: 2)"
+              formControlName="pasta"
+              maxlength="2"
+            />
+            <div *ngIf="menuforms.get('pasta')?.invalid && menuforms.get('pasta')?.touched" class="text-danger">
+              <small *ngIf="menuforms.get('pasta')?.hasError('max')">Max quantity is 2</small>
+              <small *ngIf="menuforms.get('pasta')?.hasError('min')">Quantity cannot be negative</small>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="noodles" class="form-label">Noodles</label>
+            <input
+              type="number"
+              id="noodles"
+              class="form-control"
+              placeholder="Enter Quantity (Max: 2)"
+              formControlName="nodels"
+              maxlength="2"
+            />
+            <div *ngIf="menuforms.get('nodels')?.invalid && menuforms.get('nodels')?.touched" class="text-danger">
+              <small *ngIf="menuforms.get('nodels')?.hasError('max')">Max quantity is 2</small>
+              <small *ngIf="menuforms.get('nodels')?.hasError('min')">Quantity cannot be negative</small>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="pizza" class="form-label">Pizza</label>
+            <input
+              type="number"
+              id="pizza"
+              class="form-control"
+              placeholder="Enter Quantity (Max: 2)"
+              formControlName="pizza"
+              maxlength="2"
+            />
+            <div *ngIf="menuforms.get('pizza')?.invalid && menuforms.get('pizza')?.touched" class="text-danger">
+              <small *ngIf="menuforms.get('pizza')?.hasError('max')">Max quantity is 2</small>
+              <small *ngIf="menuforms.get('pizza')?.hasError('min')">Quantity cannot be negative</small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 fw-bold" [disabled]="menuforms.invalid">
+            Save Order
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

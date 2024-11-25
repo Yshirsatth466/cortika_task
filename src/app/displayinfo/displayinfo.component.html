@@ -1,0 +1,24 @@
+<table class="table table-striped table-hover table-bordered shadow">
+    <!-- Table Header -->
+    <thead class="table-dark">
+      <tr>
+        <th class="text-center">User Name</th>
+        <th class="text-center">User Email</th>
+        <th class="text-center">Pasta</th>
+        <th class="text-center">Noodles</th>
+        <th class="text-center">Pizza</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Iterate over both user and menu data -->
+      <tr *ngFor="let n of name; let i = index">
+        <td class="text-center">{{ n.name }}</td>
+        <td class="text-center">{{ n.email }}</td>
+        <!-- Use the same index to get the corresponding menu item -->
+        <td class="text-center">{{ menu[i]?.pasta + " pasta" }}</td>
+        <td class="text-center">{{ menu[i]?.nodels + " noodles" }}</td>
+        <td class="text-center">{{ menu[i]?.pizza + " pizza" }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

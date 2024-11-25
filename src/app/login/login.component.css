@@ -1,0 +1,52 @@
+/* Set background image and gradient */
+.body{
+    background: url('https://wallpaperaccess.com/full/1312727.jpg') no-repeat center center fixed, 
+                linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: cover;
+    color: white;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: rgba(176, 176, 176, 0.8); /* Adds transparency for the blur effect */
+    backdrop-filter: blur(10px); /* Adjust blur intensity */
+    padding: 20px; /* Adds inner spacing */
+    border-radius: 10px; /* Optional: rounds the corners */
+  }
+  
+  /* Button styling */
+  .btn {
+    background-color: rgb(255, 94, 0);
+  }
+  
+  button {
+    background-color: #2575fc;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #6a11cb;
+  }
+  
+  /* Input field and card styling */
+  .form-control {
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: none;
+  }
+  
+  .card h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .form-control:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+  }
+  

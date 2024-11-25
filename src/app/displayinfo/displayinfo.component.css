@@ -1,0 +1,20 @@
+.td-s{
+    padding: 8px;
+}
+tr:hover{
+    background-color: rgb(142, 125, 125);
+}
+.th-s{
+padding: 8px;
+background-color: rgb(255, 119, 0);
+}
+.con{
+    display: flex;
+   margin-left: 10%;
+   margin-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+}

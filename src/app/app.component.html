@@ -1,0 +1,66 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-uppercase" href="#">FoodieExpress</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="displayinfo">data</a>
+        </li>
+       
+      </ul>
+      <span class="navbar-text text-white">
+        "Delivering happiness, one meal at a time."
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- Router Outlet -->
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="bg-dark text-white mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p class="small">
+          At FoodieExpress, we are passionate about bringing delicious meals to your doorstep with convenience and speed.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+        
+          <li><a href="#" class="text-white text-decoration-none">Login</a></li>
+     
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p class="small">Email: support@foodieexpress.com</p>
+        <p class="small">Phone: +1-234-567-890</p>
+        <p class="small">Address: 123 Foodie Lane, FoodTown, FT 56789</p>
+      </div>
+    </div>
+    <div class="text-center pt-3 border-top">
+      &copy; 2024 FoodieExpress. All rights reserved.
+    </div>
+  </div>
+</footer>
